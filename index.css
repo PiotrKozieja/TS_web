@@ -1,0 +1,440 @@
+:root{
+    --main-c1: /* #0093dd*/ #04337c;
+    --main-c2: red;
+}
+
+@media (max-width: 600px) and (max-height:950px)  {
+    body {
+        font-family: 'Archivo Black', sans-serif;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    nav {
+        background-color: white;
+        padding: 5px;
+        text-align: left;
+        border-bottom: 0.2vh solid #b1afaf;
+        position: relative;
+    }
+    
+    .dropbtn {
+        border: none;
+        color: #b1afaf;
+        background-color: white;
+        font-size: larger;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 4;
+        top: 100%;
+        left: 0;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        z-index: 4;
+    }
+    
+    /* Obsługa zdarzeń dla :hover i :focus */
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus .dropdown-content {
+        display: block;
+    }
+    #lnt{
+        color: #898989;
+        font-size: 1.7vh;
+        position: absolute;
+        margin-left: 52vw;
+        margin-top: -2.4vh;
+    }
+    section{
+        width: 100vw;
+        height: 200vh;
+    }
+    #section1 {
+        display:flex;
+        background-image: url(tlo.jpg);
+        background-position: center;
+        background-size:cover;
+        height: 72vh;
+        flex-direction: column;
+    }
+    #decor-container{
+        display:flex;
+        height: 30vh;
+        width: 100vw;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 15vh;
+    }
+    #decor1{
+        position: absolute;
+        background-color: var(--main-c1);
+        width: 20vh;
+        height: 29vh;
+        margin-bottom: -13vh;
+        margin-left: -10vw;
+        z-index: 2;
+
+    }
+    #decor2{
+        position: absolute;
+        background-color: var(--main-c2);
+        width: 15vh;
+        height: 20vh;
+        margin-left: 20vw;
+        margin-bottom: 2vh;
+        z-index: 1;
+    }
+    
+    #photo{
+        position: absolute;
+        height: 30vh;
+        margin-bottom: -10vh;
+        z-index: 3;
+    }
+    #TS{
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 9vh;
+        color: var(--main-c1);
+        text-align: center;
+        line-height: 9vh;
+        letter-spacing: -0.2vh;
+    }
+    #section2{
+        position: relative;
+        margin-top: -2vh;
+        height: 114vh;
+        width: 100vw;
+        background-color: var(--main-c1);
+        color: white;
+        z-index:10;
+        padding-top: 5vh;
+
+    }
+    #TK{
+        font-size: 3vh;
+        margin-top: 10vh;
+        text-align: center;
+        padding-left: 5vw;
+        padding-bottom: 1.3vh;
+        z-index:10;
+    }
+    #txt2{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        margin:6vw;
+        margin-top: 1vh;
+        text-align: left;
+        font-size: 1.3vh;
+        font-weight: 300;
+        z-index:10;
+    }
+    #section3{
+        margin-top: -20vh;
+        position: relative;
+        background-image: url(TS2.jpg);
+        background-position: center;
+        background-size:cover;
+        height: 100vh;
+        z-index: 2;
+    }
+    #background{
+        background-color: black;
+        opacity: 0.3;
+        z-index: 2;
+        height: 100vh;
+    }
+    #decor3{
+        position: relative;
+        background-color: var(--main-c1);
+        margin-top: -8vh;
+        margin-left: -5vw;
+        width: 108vw;
+        height: 5vh;
+        transform: rotate(-4deg);
+        z-index: 9;
+    }
+    #section4{
+        margin-top: -10vh;
+        background-image: url(tlo2.jpg);
+        background-position: center;
+        background-size:cover;
+        height: 120vh;
+        width: 100vw;
+        padding-top: 5vh;
+    }
+    #PT{
+        color: var(--main-c1);
+        font-size: 3vh;
+        font-weight: 300;
+        z-index: 11;
+        margin-top:10vh;
+        letter-spacing: -0.1vh;
+        padding-top: 20vh;
+        padding: 5vw;
+    }
+    #decor4{
+        position: relative;
+        background-color: var(--main-c1);
+        margin-top: -4vh;
+        width: 100vw;
+        height: 5vh;
+        z-index: 10;
+    }
+    #txt4{
+        color: var(--main-c1);
+        display: flex;
+        align-items: center;
+        height: 30vh;
+        margin:6vw;
+        margin-top: 10vh;
+        text-align: left;
+        font-size: 1.5vh;
+        font-weight: 300;
+        z-index:10;
+    }
+    #PW{
+        color: var(--main-c1);
+        font-size: 3vh;
+        font-weight: 300;
+        padding-left: 5vw;
+        z-index: 11;
+        margin-top:10vh;
+        letter-spacing: -0.1vh;
+        padding-top: 10vh;
+    }
+    #download_pw{
+        color: var(--main-c1);
+        align-items: center;
+        text-align: center;
+        font-size: 1.3vh;
+        font-weight: 300;
+        z-index:10;
+        margin-top: 10vh;
+    }
+    #pdf_file{
+        height: 10vh;
+    }
+    #section5{
+        height: 40vh;
+        background-image: url(TS_6.JPG);        
+        background-position: center;
+        background-size:cover;
+    }
+    #background2{
+        background-color: #04337c;
+        opacity: 0.9;
+        z-index: 2;
+        height: 40vh;
+    }
+
+    #decor41{
+        height: 10vh;
+        background-color: white;
+    }
+    #txtsec5{
+        padding: 5vw;
+        position: absolute;
+        margin-top: -37vh;
+        color: white;
+        font-size: 1.5vh;
+    }
+    #section6{
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        margin-top: -10vh;
+        background-image: url(tlo2.jpg);
+        background-position: center;
+        background-size:cover;
+    }
+    #MZ{
+        padding: 5vw;
+        color: var(--main-c1);
+        font-size: 3vh;
+        font-weight: 300;
+        z-index: 11;
+        margin-top:10vh;
+        letter-spacing: -0.1vh;
+        padding-top: 10vh;
+    }
+    #decor5{
+        background-color: var(--main-c1);
+        height: 5vh;
+    }
+    #decor51{
+        background-image: url(TS3.JPG);
+        height: 40vh;
+        background-position: center;
+        background-size:cover;
+    } 
+    #background3{
+        background-color: black;
+        opacity: 0.3;
+        z-index: 2;
+        height: 40vh;
+    }
+    #decor6{
+        background-color: var(--main-c1);
+        height: 5vh;
+    }
+    #section7{
+        height: 300vh;
+        align-items: center;
+        background-image: url(tlo2.jpg);
+        background-position: left;
+        background-size:cover;
+    }
+    #Mtxt{
+        color: var(--main-c1);
+        font-size: 3vh;
+
+        font-weight: 300;
+        z-index: 11;
+        letter-spacing: -0.1vh;
+        padding: 5vh;
+
+    }
+    .slink{
+        width: 80vw;
+        margin-left: 10vw;
+        margin-bottom: 4vh;
+    }
+    #fb1{
+        height: 92vh;
+    }
+    #fb2{
+        height: 50vh;
+    }
+    #fb3{
+        height: 50vh;
+    }
+    #ytlink{
+        height: 30vh;
+        margin-bottom: 4vh;
+    }
+    #section8{
+        background-image: url(TS.5.jpg);
+        background-position: center;
+        background-size:cover;
+        height: 60vh;
+        color: white;
+    }
+    #background4{
+        background-color: var(--main-c1);
+        opacity: 0.9;
+        z-index: 2;
+        height: 60vh;
+    }
+    #txtsec8{
+        padding:5vw;
+        position: absolute;
+        margin-top: -55vh;
+        font-size: 1.5vh;
+    }
+    #section9{
+        color: #04337c;
+        padding-top: 5vh;
+        height: 96vh;
+        background-image: url(tlo3.jpg);
+        background-position: center;
+        background-size:cover;
+    }
+    #txtsec9{
+        margin: 5vw;
+        width: 90vw;
+        font-size: 1.5vh;
+    }
+    #decor7{
+        background-image: url(tlo4.jpg);
+        height: 20vh;
+        background-position: center;
+        background-size:cover;
+    }
+    #background5{
+        height: 20vh;
+        background-color: #04337c;
+        opacity: 0.5;
+    }
+    #section10{
+        height: 70vh;
+        background-color: #04337c;
+    }
+    #txtsec10{       
+        height: 70vh; 
+        color:white;
+        position: absolute;
+        margin: 5vw;
+        width: 90vw;
+        z-index: 10;
+        font-size: 1.5vh;
+    }
+    #section11{
+        background-image: url(tlo5.jpg);
+        background-position: center;
+        background-size:cover;
+        height: 60vh;
+    }
+    #background6{
+        height: 60vh;
+        background-color: #04337c;
+        opacity: 0.95;
+    }
+    #decor8{
+        display: flex;
+        align-items: center;
+        color: #04337c;
+        height: 20vh;
+        padding: 5vw;
+        background-image: url(tlo2.jpg);
+        background-position: center;
+        background-size:cover;
+        font-size: 1.5vh;
+    }
+    #txtsec11{
+        font-size: 1.7vh;
+        position: absolute;
+        margin-left:5vw;
+        color:white;
+        margin-top: -50vh;
+
+    }
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
