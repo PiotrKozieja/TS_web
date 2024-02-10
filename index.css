@@ -3,7 +3,7 @@
     --main-c2: red;
 }
 
-@media (max-width: 600px) and (max-height:950px)  {
+@media (max-width: 1025px) and (max-height:1370px)  {
     body {
         font-family: 'Archivo Black', sans-serif;
         background-color: rgb(255, 255, 255);
@@ -57,9 +57,11 @@
     }
     #lnt{
         color: #898989;
+        width: 80vw;
+        text-align: right;
         font-size: 1.7vh;
         position: absolute;
-        margin-left: 52vw;
+        margin-left: 10vw;
         margin-top: -2.4vh;
     }
     section{
@@ -92,6 +94,7 @@
         z-index: 2;
 
     }
+    @media (max-width:600px){
     #decor2{
         position: absolute;
         background-color: var(--main-c2);
@@ -101,12 +104,15 @@
         margin-bottom: 2vh;
         z-index: 1;
     }
-    
+    }
     #photo{
         position: absolute;
         height: 30vh;
         margin-bottom: -10vh;
         z-index: 3;
+    }
+    #m_photo{
+        display: none;
     }
     #TS{
         font-family: 'Archivo Black', sans-serif;
@@ -119,32 +125,33 @@
     #section2{
         position: relative;
         margin-top: -2vh;
-        height: 114vh;
+        display: flex;
         width: 100vw;
         background-color: var(--main-c1);
         color: white;
         z-index:10;
         padding-top: 5vh;
-
+        flex-direction: column
     }
     #TK{
         font-size: 3vh;
-        margin-top: 10vh;
         text-align: center;
-        padding-left: 5vw;
+
         padding-bottom: 1.3vh;
         z-index:10;
     }
     #txt2{
         display: flex;
         align-items: center;
-        height: 100vh;
-        margin:6vw;
-        margin-top: 1vh;
+        margin-left:5vw;
+        margin-right: 5vw;
         text-align: left;
         font-size: 1.3vh;
         font-weight: 300;
         z-index:10;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 6vh;
     }
     #section3{
         margin-top: -20vh;
@@ -166,7 +173,7 @@
         background-color: var(--main-c1);
         margin-top: -8vh;
         margin-left: -5vw;
-        width: 108vw;
+        width: 100vw;
         height: 5vh;
         transform: rotate(-4deg);
         z-index: 9;
@@ -416,9 +423,354 @@
         margin-top: -50vh;
 
     }
+@media (min-width:600px){
+        #decor2{
+            position: absolute;
+            background-color: var(--main-c2);
+            width: 15vh;
+            height: 20vh;
+            margin-left: 15vw;
+            margin-bottom: 2vh;
+            z-index: 1;
+        }
+    }
+    #m_decor1{
+        display: none;
+    }
+    #m_container1{
+        display: none;
+    }
+    #m_nav{
+        display: none;
+    }
+    #m_photo1{
+        display: none;
+    }
+    #m_TK{
+        display: none;
+    }
+    #m_photo2{
+        display: none;
+    }
+    #m_section42{
+        display: none;
+    }
+    }
+@media (min-width: 1025px){
+    body{
+        font-family: 'Archivo Black', sans-serif;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+    }
+    nav{
+        display: none;
+    }
+    #section1{
+        width: 100vw;
+        display: flex;
+        background-image: url(tlo2.jpg);
+        background-position: center;
+        background-size:cover;
+        height: 85vh;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-size: 8vh;
+        margin-left: -1vw;
+    }
+    #photo{
+        display: none;
+    }
+    #m_photo1{
+        position: absolute;
+        z-index: 5;
+        height: 55vh;
+        margin-left: -37vw;
+        margin-top: -25vh;
+    } 
+    #TS{
+        display: none;
+    } 
+    #m_container1{
+        color: var(--main-c1);
+        margin-top: -6vh;
+        width: 60vw;
+        padding-left: 10vw;
+    }  
+    #m_TS{
+        width: 60vh;
+        
+        line-height: 12vh;
 
     }
-    
+    #m_tknp{
+        font-size: 3vh;
+        width: 40vw;
+        margin-top: -4vh;
+    }
+    #m_lnt{
+        font-size: 5vh;
+        margin-top: -8vh;
+        color: var(--main-c2);
+    }
+    #m_nav{
+        width: 102vw;
+        font-size: 2vh;
+        position: absolute;
+        margin-top: -78vh;
+        text-align: center;
+        background-color: white;
+        border-bottom: 0.2vh solid #b1afaf;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+        line-height: 5vh;
+    }
+    .m_btn{
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    #m_decor1{
+        margin-left: -1vw;
+        width: 101vw;
+        height: 5vh;
+        background-color: var(--main-c1);
+        text-align: center;
+        color: white;
+        font-size:2.5vh;
+        letter-spacing: 2vw;
+        padding-top: 1vh;
+    }
+    #TK{
+        display: none;;
+    }
+    #m_TK{
+        font-size:4vh;
+        color: var(--main-c1);
+    }
+    #section2{
+        display: flex;
+
+        padding-top: 6vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #txt2{
+        font-size: 1.5vh;
+        width: 45vw;
+        margin-left: 5vw;
+        color: var(--main-c1);
+        margin-bottom: 20vh;
+    }
+    #m_photo2{
+        height: 80vh;
+        color: var(--main-c1);
+        margin-right: 8vw;
+
+    }
+    #section4{
+        background-color: var(--main-c1);
+        color:white;
+        width: 102vw;
+        margin-left: -2vw;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    #txt4{
+        width: 40vw;
+        font-size: 1.5vh;
+        padding-left: 5vw;
+        padding-bottom:10vh;
+        
+    }
+    #PT{
+        display: none;
+    }
+    #m_PT{
+        font-size: 4vh;
+        padding-top: 5vh;
+    }
+    #PW{
+        display: none;
+    }
+    #download_pw{
+        display: none;
+    }
+    #m_photo3{
+        width: 51vw;
+        height: auto;
+        background-image: url(tarnobrzeg1.jpg);
+        background-position: center;
+        background-size:cover;
+
+    }
+    #m_section42{
+        background-color: #04337c;
+        height: 50vh;
+        width: 102vw;
+        margin-left: -2vw;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    #m_photo4{
+        background-image: url(tarnobrzeg2.jpg);
+        background-position: center;
+        background-size:cover;
+        width: 51vw;
+        height: 50vh;
+    }
+    #m_PW{
+        font-size: 4vh;
+    }
+    #m_cpw{
+        width: 30vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10vw;
+    }
+    #pdf_file{
+        height: 30vh;
+    }
+    #section5{
+        width: 102vw;
+        margin-left: -2vw;
+        padding-bottom:10vh;
+        padding-top:8vh;
+        color: var(--main-c1);
+
+        background-position: center;
+        background-size:cover;
+
+    }
+    #txtsec5{
+        width: 90vw;
+        padding-left: 7vw;
+    }
+    #section6{
+        height: 80vh;
+        width: 102vw;
+        margin-left: -2vw;
+        background-color: rgb(97, 72, 72);
+        background-position: center;
+        background-size:cover;
+    }
+    #MZ{
+        font-size: 3vh;
+        color:  var(--main-c1);
+        padding-top: 8vh;
+        padding-left: 7vw;
+    }
+    #section7{
+        padding-top: 20vh;
+        width: 95vw;
+        margin-left: -1vw;
+        padding-left:5vw;
+        background-image: url(tlo2.jpg);
+        background-position: center;
+        background-size:cover;
+        display: flex;
+        height: 95vh;
+    }
+    #Mtxt{
+        position: absolute;
+        padding-left: 1vw;
+        font-size:3vh;
+        color: var(--main-c2);
+        margin-top: -12vh;   
+    }
+    .slink{
+        width: 15vw;
+        padding: 1vw;
+    }
+    #ytlink{
+        height: 35vh;
+    }
+    #section8{
+        width: 100vw;
+        margin-left: -1vw;
+        background-color: var(--main-c1);
+        color: white;
+
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row-reverse
+    }
+    #txtsec8{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        width: 40vw;
+    }
+    #m_photo5{
+        width:50vw;
+        height: auto;
+        background-image:url(TS7.jpeg);
+        background-position: center;
+        background-size:cover;
+    }
+    #section9{
+        color:var(--main-c1);
+        display:flex;
+        width:100vw;
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(tlo3.jpg);
+        background-position: center;
+        background-size:cover;
+
+    }
+    #txtsec9{
+        display: flex;
+        width: 90vw;
+    }
+    .m_element1{
+        width:30vw;
+        padding: 2vw;
+        text-align: center;
+    }
+    #section11{
+        background-color: var(--main-c1);
+        color:white;
+        width: 100vw;
+        margin-left:-1vw;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #txtsec11{
+        padding: 5vw;
+    }
+    #m_background{
+        width: 50vw;
+        height: 70vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #m_background1{
+        border: 0.5vh solid var(--main-c1);
+        width: 40vw;
+        height: 60vh;
+        color: var(--main-c1);
+        font-size: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+}
+
 
 
 
