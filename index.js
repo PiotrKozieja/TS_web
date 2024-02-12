@@ -28,4 +28,5 @@ document.addEventListener("DOMContentLoaded", function(){
         }
         event.stopPropagation(); // Zapobieganie propagacji zdarzenia do dokumentu
     });
+
 });
