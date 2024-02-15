@@ -1,3 +1,6 @@
+function wyslijFormularz() {
+        alert("Dziękujemy za wysłanie formularza. Prosimy o sprawdzenie swojej skrzynki e-mail.");
+    }
 document.addEventListener("DOMContentLoaded", function(){
     var dropdown = document.querySelector(".dropdown");
     var dropdownContent = document.querySelector(".dropdown-content");
@@ -6,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     function hideDropdown() {
         dropdownContent.style.display = "none";
     }
+
 
     // Funkcja do sprawdzania czy kliknięcie nastąpiło wewnątrz menu
     function isClickedInsideDropdown(event) {
